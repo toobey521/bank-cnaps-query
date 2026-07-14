@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>银行网点行号查询工具 - Toobey</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #1a73e8, #24243e);
+            min-height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            max-width: 700px;
+            padding: 40px 24px;
+            text-align: center;
+        }
+        .logo {
+            font-size: 64px;
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            font-size: 16px;
+            opacity: 0.8;
+            margin-bottom: 32px;
+        }
+        .card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+        .card h2 {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+        .card p {
+            font-size: 14px;
+            opacity: 0.8;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 14px 40px;
+            background: #34a853;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px rgba(52,168,83,0.4);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(52,168,83,0.6);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px;
+            margin-top: 24px;
+        }
+        .feature {
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 16px;
+            font-size: 13px;
+        }
+        .feature .icon { font-size: 24px; margin-bottom: 6px; }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 24px;
+            flex-wrap: wrap;
+        }
+        .stat-item { text-align: center; }
+        .stat-item .num { font-size: 24px; font-weight: 700; }
+        .stat-item .label { font-size: 12px; opacity: 0.6; }
+        .footer { margin-top: 32px; font-size: 12px; opacity: 0.4; }
+        @media (max-width: 600px) {
+            .features { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🏦</div>
+        <h1>银行网点行号查询-Toobey</h1>
+        <p class="subtitle">全国银行联行号（CNAPS）查询工具 · 离线可用 · 绿色免安装</p>
+
+        <div class="card">
+            <h2>📥 下载软件</h2>
+            <p>Windows 绿色版，下载后双击即可运行，自动打开浏览器使用</p>
+            <a class="btn" href="银行行号查询.exe" download>⬇ 下载 银行行号查询.exe</a>
+            <div style="margin-top:12px;font-size:12px;opacity:0.6">版本 V3.0 | 34MB | 无需安装</div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="num">32.9万</div>
+                <div class="label">银行网点</div>
+            </div>
+            <div class="stat-item">
+                <div class="num">36</div>
+                <div class="label">家银行</div>
+            </div>
+            <div class="stat-item">
+                <div class="num">5,774</div>
+                <div class="label">个城市</div>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="icon">🔍</div>
+                <div>网点联行号模糊查询</div>
+            </div>
+            <div class="feature">
+                <div class="icon">💳</div>
+                <div>银行卡号发卡行识别</div>
+            </div>
+            <div class="feature">
+                <div class="icon">📍</div>
+                <div>省份/城市/支行三级钻取</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Toobey Network Technology &copy; 2026
+        </div>
+    </div>
+</body>
+</html>
